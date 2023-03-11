@@ -107,7 +107,7 @@ install_x-ui() {
     cd /usr/local/
 
     last_version="0.3.4.1"
-    url="https://github.com/FranzKafkaYu/x-ui/releases/download/0.3.4.1/x-ui-linux-${arch}.tar.gz"
+    url="https://github.com/FranzKafkaYu/x-ui/releases/download/${last_version}/x-ui-linux-${arch}.tar.gz"
     echo -e "开始安装 x-ui v$1"
     wget -N --no-check-certificate -O /usr/local/x-ui-linux-${arch}.tar.gz ${url}
     if [[ $? -ne 0 ]]; then
